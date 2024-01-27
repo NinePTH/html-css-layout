@@ -52,7 +52,7 @@ nav{
     background-color: #a17e60
     ;
     color: #fff;
-    height: 700px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,7 @@ nav{
 
 .banner-info {
     text-align: center;
+    animation: fadeIn 1.5s ease-in both;
 }
 
 .banner-info img {
@@ -85,6 +86,21 @@ main div {
     padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    animation: slideInRight 1s ease-in-out forwards;
+    opacity: 0; /* Initially hide the divs */
+}
+
+/* Delay animation for each div */
+main div:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+main div:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+main div:nth-child(3) {
+    animation-delay: 2.5s;
 }
 
 main div h3 {
@@ -112,4 +128,37 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes MainfadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(-10%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
