@@ -35,7 +35,7 @@
     <!-- Banner End -->
 
     <!-- Main Start -->
-    <main>
+    <main class="animate-on-scroll">
         <div>
             <h3>Welcome</h3>
             <p>This website is made by nine during learning how to make HTML and CSS layout. He think it's kinda cute if he put his girlfriend information for his first layout.<br><br> And Nine tryna use Bew's favorite color for the website to make it suit her style. I hope it will turn out good.</p>
@@ -58,6 +58,23 @@
         <p>Copyright 2023. Made by Nine</p>
     </footer>
     <!-- Footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $(".animate-on-scroll").each(function() {
+            var position = $(this).offset().top;
+            var scrollPosition = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (position < scrollPosition + windowHeight) {
+                $(this).addClass("active");
+            }
+        });
+    });
+});
+</script>
+
 
 </body>
 </html>
