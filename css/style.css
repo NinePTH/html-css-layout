@@ -1,10 +1,25 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik';
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 nav{
     display: flex;
@@ -68,7 +83,10 @@ main {
 }
 
 main div {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 main div h3 {
