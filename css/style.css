@@ -24,6 +24,14 @@ nav{
     justify-content: space-between;
     /* border: 1px solid red; */
     padding: 10px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+section {
+    margin-top: 42px;
 }
 
 .logo a{
@@ -49,8 +57,7 @@ nav{
 }
 
 .banner {
-    background-color: #a17e60
-    ;
+    background-color: #a17e60;
     color: #fff;
     height: 750px;
     display: flex;
