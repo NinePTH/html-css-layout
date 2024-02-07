@@ -10,9 +10,9 @@ html, body {
 }
 
 /* Hide scrollbar for Firefox */
-body {
+/* body {
     scrollbar-width: none;
-}
+} */
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 body::-webkit-scrollbar {
@@ -26,6 +26,9 @@ nav{
     padding: 10px;
     position: fixed;
     background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1;
 }
